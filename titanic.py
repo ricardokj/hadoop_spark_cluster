@@ -5,7 +5,6 @@ spark = SparkSession \
     .appName('Titanic Data') \
     .getOrCreate()
 
-
 df = (spark.read.format("csv").option('header', 'true').load("arquivos/titanic.csv"))
 
 from pyspark.sql.functions import col
