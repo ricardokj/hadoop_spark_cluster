@@ -1,0 +1,1235 @@
+2021-10-01 02:16:28 INFO  SparkContext:54 - Running Spark version 2.4.0
+2021-10-01 02:16:28 INFO  SparkContext:54 - Submitted application: Titanic Data
+2021-10-01 02:16:28 INFO  SecurityManager:54 - Changing view acls to: root
+2021-10-01 02:16:28 INFO  SecurityManager:54 - Changing modify acls to: root
+2021-10-01 02:16:28 INFO  SecurityManager:54 - Changing view acls groups to: 
+2021-10-01 02:16:28 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2021-10-01 02:16:28 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+2021-10-01 02:16:28 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 35881.
+2021-10-01 02:16:28 INFO  SparkEnv:54 - Registering MapOutputTracker
+2021-10-01 02:16:28 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2021-10-01 02:16:28 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2021-10-01 02:16:28 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2021-10-01 02:16:28 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-ceb16238-8c4f-4303-ab11-8338ce67a6d1
+2021-10-01 02:16:28 INFO  MemoryStore:54 - MemoryStore started with capacity 93.3 MB
+2021-10-01 02:16:28 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2021-10-01 02:16:28 INFO  log:192 - Logging initialized @1934ms
+2021-10-01 02:16:28 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2021-10-01 02:16:28 INFO  Server:419 - Started @1989ms
+2021-10-01 02:16:28 INFO  AbstractConnector:278 - Started ServerConnector@44ebc263{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2021-10-01 02:16:28 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@266be890{/jobs,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5c6e88b0{/jobs/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@16af846c{/jobs/job,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1aa0d6a7{/jobs/job/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3223e64b{/stages,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@58c58887{/stages/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5aa84906{/stages/stage,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1fe8327f{/stages/stage/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@790a8fd{/stages/pool,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4cb2a86c{/stages/pool/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4f5d8b87{/storage,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@117833d9{/storage/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@13ada64b{/storage/rdd,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4a059d9a{/storage/rdd/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@69a726ee{/environment,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@399126f8{/environment/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4770407f{/executors,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@21ffec46{/executors/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@71bf2ec1{/executors/threadDump,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@41a970e8{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@41fb31a{/static,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1a782553{/,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@290d1af9{/api,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3f2cc604{/jobs/job/kill,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2d733ae5{/stages/stage/kill,null,AVAILABLE,@Spark}
+2021-10-01 02:16:28 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://namenode:4040
+2021-10-01 02:16:29 INFO  RMProxy:98 - Connecting to ResourceManager at /10.250.64.24:8032
+2021-10-01 02:16:29 INFO  Client:54 - Requesting a new application from cluster with 2 NodeManagers
+2021-10-01 02:16:29 INFO  Client:54 - Verifying our application has not requested more than the maximum memory capability of the cluster (1536 MB per container)
+2021-10-01 02:16:29 INFO  Client:54 - Will allocate AM container, with 896 MB memory including 384 MB overhead
+2021-10-01 02:16:29 INFO  Client:54 - Setting up container launch context for our AM
+2021-10-01 02:16:29 INFO  Client:54 - Setting up the launch environment for our AM container
+2021-10-01 02:16:29 INFO  Client:54 - Preparing resources for our AM container
+2021-10-01 02:16:29 WARN  Client:66 - Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+2021-10-01 02:16:32 INFO  Client:54 - Uploading resource file:/tmp/spark-723c3b28-2768-4996-a092-a8e60afdc76a/__spark_libs__8987499465272486163.zip -> hdfs://10.250.64.24:9000/user/root/.sparkStaging/application_1633046292356_0006/__spark_libs__8987499465272486163.zip
+2021-10-01 02:16:35 INFO  Client:54 - Uploading resource file:/root/spark/python/lib/pyspark.zip -> hdfs://10.250.64.24:9000/user/root/.sparkStaging/application_1633046292356_0006/pyspark.zip
+2021-10-01 02:16:35 INFO  Client:54 - Uploading resource file:/root/spark/python/lib/py4j-0.10.7-src.zip -> hdfs://10.250.64.24:9000/user/root/.sparkStaging/application_1633046292356_0006/py4j-0.10.7-src.zip
+2021-10-01 02:16:35 INFO  Client:54 - Uploading resource file:/tmp/spark-723c3b28-2768-4996-a092-a8e60afdc76a/__spark_conf__7729349627232173141.zip -> hdfs://10.250.64.24:9000/user/root/.sparkStaging/application_1633046292356_0006/__spark_conf__.zip
+2021-10-01 02:16:35 INFO  SecurityManager:54 - Changing view acls to: root
+2021-10-01 02:16:35 INFO  SecurityManager:54 - Changing modify acls to: root
+2021-10-01 02:16:35 INFO  SecurityManager:54 - Changing view acls groups to: 
+2021-10-01 02:16:35 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2021-10-01 02:16:35 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+2021-10-01 02:16:37 INFO  Client:54 - Submitting application application_1633046292356_0006 to ResourceManager
+2021-10-01 02:16:37 INFO  YarnClientImpl:273 - Submitted application application_1633046292356_0006
+2021-10-01 02:16:37 INFO  SchedulerExtensionServices:54 - Starting Yarn extension services with app application_1633046292356_0006 and attemptId None
+2021-10-01 02:16:38 INFO  Client:54 - Application report for application_1633046292356_0006 (state: ACCEPTED)
+2021-10-01 02:16:38 INFO  Client:54 - 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1633054597149
+	 final status: UNDEFINED
+	 tracking URL: http://namenode:8088/proxy/application_1633046292356_0006/
+	 user: root
+2021-10-01 02:16:39 INFO  Client:54 - Application report for application_1633046292356_0006 (state: ACCEPTED)
+2021-10-01 02:16:40 INFO  Client:54 - Application report for application_1633046292356_0006 (state: ACCEPTED)
+2021-10-01 02:16:41 INFO  Client:54 - Application report for application_1633046292356_0006 (state: ACCEPTED)
+2021-10-01 02:16:42 INFO  Client:54 - Application report for application_1633046292356_0006 (state: ACCEPTED)
+2021-10-01 02:16:43 INFO  Client:54 - Application report for application_1633046292356_0006 (state: ACCEPTED)
+2021-10-01 02:16:43 INFO  YarnClientSchedulerBackend:54 - Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> namenode, PROXY_URI_BASES -> http://namenode:8088/proxy/application_1633046292356_0006), /proxy/application_1633046292356_0006
+2021-10-01 02:16:43 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /jobs, /jobs/json, /jobs/job, /jobs/job/json, /stages, /stages/json, /stages/stage, /stages/stage/json, /stages/pool, /stages/pool/json, /storage, /storage/json, /storage/rdd, /storage/rdd/json, /environment, /environment/json, /executors, /executors/json, /executors/threadDump, /executors/threadDump/json, /static, /, /api, /jobs/job/kill, /stages/stage/kill.
+2021-10-01 02:16:43 INFO  YarnSchedulerBackend$YarnSchedulerEndpoint:54 - ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+2021-10-01 02:16:44 INFO  Client:54 - Application report for application_1633046292356_0006 (state: RUNNING)
+2021-10-01 02:16:44 INFO  Client:54 - 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.250.64.25
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1633054597149
+	 final status: UNDEFINED
+	 tracking URL: http://namenode:8088/proxy/application_1633046292356_0006/
+	 user: root
+2021-10-01 02:16:44 INFO  YarnClientSchedulerBackend:54 - Application application_1633046292356_0006 has started running.
+2021-10-01 02:16:44 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40347.
+2021-10-01 02:16:44 INFO  NettyBlockTransferService:54 - Server created on namenode:40347
+2021-10-01 02:16:44 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2021-10-01 02:16:44 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, namenode, 40347, None)
+2021-10-01 02:16:44 INFO  BlockManagerMasterEndpoint:54 - Registering block manager namenode:40347 with 93.3 MB RAM, BlockManagerId(driver, namenode, 40347, None)
+2021-10-01 02:16:44 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, namenode, 40347, None)
+2021-10-01 02:16:44 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, namenode, 40347, None)
+2021-10-01 02:16:44 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /metrics/json.
+2021-10-01 02:16:44 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5a4d2f71{/metrics/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:44 INFO  EventLoggingListener:54 - Logging events to hdfs://namenode:9000/spark-logs/application_1633046292356_0006
+2021-10-01 02:16:47 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.250.64.26:35886) with ID 1
+2021-10-01 02:16:47 INFO  BlockManagerMasterEndpoint:54 - Registering block manager datanode2:35737 with 93.3 MB RAM, BlockManagerId(1, datanode2, 35737, None)
+2021-10-01 02:16:58 INFO  YarnClientSchedulerBackend:54 - SchedulerBackend is ready for scheduling beginning after waiting maxRegisteredResourcesWaitingTime: 30000(ms)
+2021-10-01 02:16:59 INFO  SharedState:54 - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/root/spark-warehouse').
+2021-10-01 02:16:59 INFO  SharedState:54 - Warehouse path is 'file:/root/spark-warehouse'.
+2021-10-01 02:16:59 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL.
+2021-10-01 02:16:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@60afb9f8{/SQL,null,AVAILABLE,@Spark}
+2021-10-01 02:16:59 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/json.
+2021-10-01 02:16:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@735d7468{/SQL/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:59 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution.
+2021-10-01 02:16:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@15a8a434{/SQL/execution,null,AVAILABLE,@Spark}
+2021-10-01 02:16:59 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution/json.
+2021-10-01 02:16:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@65516aa9{/SQL/execution/json,null,AVAILABLE,@Spark}
+2021-10-01 02:16:59 INFO  JettyUtils:54 - Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /static/sql.
+2021-10-01 02:16:59 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6e16e6e7{/static/sql,null,AVAILABLE,@Spark}
+2021-10-01 02:16:59 INFO  StateStoreCoordinatorRef:54 - Registered StateStoreCoordinator endpoint
+2021-10-01 02:17:00 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2021-10-01 02:17:00 INFO  FileSourceStrategy:54 - Post-Scan Filters: (length(trim(value#0, None)) > 0)
+2021-10-01 02:17:00 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2021-10-01 02:17:00 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2021-10-01 02:17:00 INFO  CodeGenerator:54 - Code generated in 229.676407 ms
+2021-10-01 02:17:01 INFO  CodeGenerator:54 - Code generated in 17.930676 ms
+2021-10-01 02:17:01 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 284.5 KB, free 93.0 MB)
+2021-10-01 02:17:01 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 24.8 KB, free 93.0 MB)
+2021-10-01 02:17:01 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on namenode:40347 (size: 24.8 KB, free: 93.3 MB)
+2021-10-01 02:17:01 INFO  SparkContext:54 - Created broadcast 0 from load at NativeMethodAccessorImpl.java:0
+2021-10-01 02:17:01 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4254606 bytes, open cost is considered as scanning 4194304 bytes.
+2021-10-01 02:17:01 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2021-10-01 02:17:01 INFO  DAGScheduler:54 - Got job 0 (load at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2021-10-01 02:17:01 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (load at NativeMethodAccessorImpl.java:0)
+2021-10-01 02:17:01 INFO  DAGScheduler:54 - Parents of final stage: List()
+2021-10-01 02:17:01 INFO  DAGScheduler:54 - Missing parents: List()
+2021-10-01 02:17:01 INFO  DAGScheduler:54 - Submitting ResultStage 0 (MapPartitionsRDD[3] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2021-10-01 02:17:01 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 8.8 KB, free 93.0 MB)
+2021-10-01 02:17:01 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.5 KB, free 93.0 MB)
+2021-10-01 02:17:01 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on namenode:40347 (size: 4.5 KB, free: 93.3 MB)
+2021-10-01 02:17:01 INFO  SparkContext:54 - Created broadcast 1 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:01 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:01 INFO  YarnScheduler:54 - Adding task set 0.0 with 1 tasks
+2021-10-01 02:17:01 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, datanode2, executor 1, partition 0, NODE_LOCAL, 8344 bytes)
+2021-10-01 02:17:01 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on datanode2:35737 (size: 4.5 KB, free: 93.3 MB)
+2021-10-01 02:17:02 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on datanode2:35737 (size: 24.8 KB, free: 93.3 MB)
+2021-10-01 02:17:03 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 1727 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:03 INFO  YarnScheduler:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:03 INFO  DAGScheduler:54 - ResultStage 0 (load at NativeMethodAccessorImpl.java:0) finished in 1.838 s
+2021-10-01 02:17:03 INFO  DAGScheduler:54 - Job 0 finished: load at NativeMethodAccessorImpl.java:0, took 1.918868 s
+2021-10-01 02:17:03 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2021-10-01 02:17:03 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2021-10-01 02:17:03 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2021-10-01 02:17:03 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2021-10-01 02:17:03 INFO  CodeGenerator:54 - Code generated in 20.718325 ms
+2021-10-01 02:17:03 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 284.5 KB, free 92.7 MB)
+2021-10-01 02:17:03 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 24.8 KB, free 92.7 MB)
+2021-10-01 02:17:03 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on namenode:40347 (size: 24.8 KB, free: 93.2 MB)
+2021-10-01 02:17:03 INFO  SparkContext:54 - Created broadcast 2 from load at NativeMethodAccessorImpl.java:0
+2021-10-01 02:17:03 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4254606 bytes, open cost is considered as scanning 4194304 bytes.
+2021-10-01 02:17:03 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2021-10-01 02:17:03 INFO  FileSourceStrategy:54 - Post-Scan Filters: AtLeastNNulls(n, cast(Survived#11 as float),cast(Pclass#12 as float),CASE WHEN (Sex#14 = null) THEN null ELSE Sex#14 END,cast(Age#15 as float),cast(Fare#19 as float),CASE WHEN (Embarked#21 = null) THEN null ELSE Embarked#21 END),AtLeastNNulls(n, CASE WHEN (Sex#14 = null) THEN null ELSE Sex#14 END)
+2021-10-01 02:17:03 INFO  FileSourceStrategy:54 - Output Data Schema: struct<Survived: string, Pclass: string, Sex: string, Age: string, Fare: string ... 1 more field>
+2021-10-01 02:17:03 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2021-10-01 02:17:03 INFO  CodeGenerator:54 - Code generated in 59.373224 ms
+2021-10-01 02:17:03 INFO  MemoryStore:54 - Block broadcast_3 stored as values in memory (estimated size 284.5 KB, free 92.4 MB)
+2021-10-01 02:17:03 INFO  MemoryStore:54 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 24.8 KB, free 92.4 MB)
+2021-10-01 02:17:03 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on namenode:40347 (size: 24.8 KB, free: 93.2 MB)
+2021-10-01 02:17:03 INFO  SparkContext:54 - Created broadcast 3 from rdd at StringIndexer.scala:138
+2021-10-01 02:17:03 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2021-10-01 02:17:03 INFO  SparkContext:54 - Starting job: countByValue at StringIndexer.scala:140
+2021-10-01 02:17:04 INFO  DAGScheduler:54 - Registering RDD 15 (countByValue at StringIndexer.scala:140)
+2021-10-01 02:17:04 INFO  DAGScheduler:54 - Got job 1 (countByValue at StringIndexer.scala:140) with 1 output partitions
+2021-10-01 02:17:04 INFO  DAGScheduler:54 - Final stage: ResultStage 2 (countByValue at StringIndexer.scala:140)
+2021-10-01 02:17:04 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 1)
+2021-10-01 02:17:04 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 1)
+2021-10-01 02:17:04 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 1 (MapPartitionsRDD[15] at countByValue at StringIndexer.scala:140), which has no missing parents
+2021-10-01 02:17:04 INFO  MemoryStore:54 - Block broadcast_4 stored as values in memory (estimated size 23.8 KB, free 92.4 MB)
+2021-10-01 02:17:04 INFO  MemoryStore:54 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 10.7 KB, free 92.3 MB)
+2021-10-01 02:17:04 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on namenode:40347 (size: 10.7 KB, free: 93.2 MB)
+2021-10-01 02:17:04 INFO  SparkContext:54 - Created broadcast 4 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:04 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[15] at countByValue at StringIndexer.scala:140) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:04 INFO  YarnScheduler:54 - Adding task set 1.0 with 1 tasks
+2021-10-01 02:17:04 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 1, datanode2, executor 1, partition 0, NODE_LOCAL, 8333 bytes)
+2021-10-01 02:17:04 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on datanode2:35737 (size: 10.7 KB, free: 93.3 MB)
+2021-10-01 02:17:05 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on datanode2:35737 (size: 24.8 KB, free: 93.2 MB)
+2021-10-01 02:17:06 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 1) in 1882 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:06 INFO  YarnScheduler:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - ShuffleMapStage 1 (countByValue at StringIndexer.scala:140) finished in 1.935 s
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - looking for newly runnable stages
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - running: Set()
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - waiting: Set(ResultStage 2)
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - failed: Set()
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Submitting ResultStage 2 (ShuffledRDD[16] at countByValue at StringIndexer.scala:140), which has no missing parents
+2021-10-01 02:17:06 INFO  MemoryStore:54 - Block broadcast_5 stored as values in memory (estimated size 3.3 KB, free 92.3 MB)
+2021-10-01 02:17:06 INFO  MemoryStore:54 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 2017.0 B, free 92.3 MB)
+2021-10-01 02:17:06 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on namenode:40347 (size: 2017.0 B, free: 93.2 MB)
+2021-10-01 02:17:06 INFO  SparkContext:54 - Created broadcast 5 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 2 (ShuffledRDD[16] at countByValue at StringIndexer.scala:140) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:06 INFO  YarnScheduler:54 - Adding task set 2.0 with 1 tasks
+2021-10-01 02:17:06 INFO  TaskSetManager:54 - Starting task 0.0 in stage 2.0 (TID 2, datanode2, executor 1, partition 0, NODE_LOCAL, 7673 bytes)
+2021-10-01 02:17:06 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on datanode2:35737 (size: 2017.0 B, free: 93.2 MB)
+2021-10-01 02:17:06 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.250.64.26:35886
+2021-10-01 02:17:06 INFO  TaskSetManager:54 - Finished task 0.0 in stage 2.0 (TID 2) in 104 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - ResultStage 2 (countByValue at StringIndexer.scala:140) finished in 0.111 s
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Job 1 finished: countByValue at StringIndexer.scala:140, took 2.214838 s
+2021-10-01 02:17:06 INFO  YarnScheduler:54 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:06 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2021-10-01 02:17:06 INFO  FileSourceStrategy:54 - Post-Scan Filters: AtLeastNNulls(n, cast(Survived#11 as float),cast(Pclass#12 as float),CASE WHEN (Sex#14 = null) THEN null ELSE Sex#14 END,cast(Age#15 as float),cast(Fare#19 as float),CASE WHEN (Embarked#21 = null) THEN null ELSE Embarked#21 END),AtLeastNNulls(n, CASE WHEN (Embarked#21 = null) THEN null ELSE Embarked#21 END)
+2021-10-01 02:17:06 INFO  FileSourceStrategy:54 - Output Data Schema: struct<Survived: string, Pclass: string, Sex: string, Age: string, Fare: string ... 1 more field>
+2021-10-01 02:17:06 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2021-10-01 02:17:06 INFO  CodeGenerator:54 - Code generated in 24.581804 ms
+2021-10-01 02:17:06 INFO  MemoryStore:54 - Block broadcast_6 stored as values in memory (estimated size 284.5 KB, free 92.1 MB)
+2021-10-01 02:17:06 INFO  MemoryStore:54 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 24.8 KB, free 92.0 MB)
+2021-10-01 02:17:06 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on namenode:40347 (size: 24.8 KB, free: 93.2 MB)
+2021-10-01 02:17:06 INFO  SparkContext:54 - Created broadcast 6 from rdd at StringIndexer.scala:138
+2021-10-01 02:17:06 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2021-10-01 02:17:06 INFO  SparkContext:54 - Starting job: countByValue at StringIndexer.scala:140
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Registering RDD 23 (countByValue at StringIndexer.scala:140)
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Got job 2 (countByValue at StringIndexer.scala:140) with 1 output partitions
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Final stage: ResultStage 4 (countByValue at StringIndexer.scala:140)
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 3)
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 3)
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 3 (MapPartitionsRDD[23] at countByValue at StringIndexer.scala:140), which has no missing parents
+2021-10-01 02:17:06 INFO  MemoryStore:54 - Block broadcast_7 stored as values in memory (estimated size 23.8 KB, free 92.0 MB)
+2021-10-01 02:17:06 INFO  MemoryStore:54 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 10.6 KB, free 92.0 MB)
+2021-10-01 02:17:06 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on namenode:40347 (size: 10.6 KB, free: 93.2 MB)
+2021-10-01 02:17:06 INFO  SparkContext:54 - Created broadcast 7 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[23] at countByValue at StringIndexer.scala:140) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:06 INFO  YarnScheduler:54 - Adding task set 3.0 with 1 tasks
+2021-10-01 02:17:06 INFO  TaskSetManager:54 - Starting task 0.0 in stage 3.0 (TID 3, datanode2, executor 1, partition 0, NODE_LOCAL, 8333 bytes)
+2021-10-01 02:17:06 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on datanode2:35737 (size: 10.6 KB, free: 93.2 MB)
+2021-10-01 02:17:06 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on datanode2:35737 (size: 24.8 KB, free: 93.2 MB)
+2021-10-01 02:17:06 INFO  TaskSetManager:54 - Finished task 0.0 in stage 3.0 (TID 3) in 172 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:06 INFO  YarnScheduler:54 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - ShuffleMapStage 3 (countByValue at StringIndexer.scala:140) finished in 0.186 s
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - looking for newly runnable stages
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - running: Set()
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - waiting: Set(ResultStage 4)
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - failed: Set()
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Submitting ResultStage 4 (ShuffledRDD[24] at countByValue at StringIndexer.scala:140), which has no missing parents
+2021-10-01 02:17:06 INFO  MemoryStore:54 - Block broadcast_8 stored as values in memory (estimated size 3.3 KB, free 92.0 MB)
+2021-10-01 02:17:06 INFO  MemoryStore:54 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 2009.0 B, free 92.0 MB)
+2021-10-01 02:17:06 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on namenode:40347 (size: 2009.0 B, free: 93.2 MB)
+2021-10-01 02:17:06 INFO  SparkContext:54 - Created broadcast 8 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 4 (ShuffledRDD[24] at countByValue at StringIndexer.scala:140) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:06 INFO  YarnScheduler:54 - Adding task set 4.0 with 1 tasks
+2021-10-01 02:17:06 INFO  TaskSetManager:54 - Starting task 0.0 in stage 4.0 (TID 4, datanode2, executor 1, partition 0, NODE_LOCAL, 7673 bytes)
+2021-10-01 02:17:06 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on datanode2:35737 (size: 2009.0 B, free: 93.2 MB)
+2021-10-01 02:17:06 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 1 to 10.250.64.26:35886
+2021-10-01 02:17:06 INFO  TaskSetManager:54 - Finished task 0.0 in stage 4.0 (TID 4) in 36 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:06 INFO  YarnScheduler:54 - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - ResultStage 4 (countByValue at StringIndexer.scala:140) finished in 0.046 s
+2021-10-01 02:17:06 INFO  DAGScheduler:54 - Job 2 finished: countByValue at StringIndexer.scala:140, took 0.237697 s
+2021-10-01 02:17:06 INFO  Instrumentation:54 - [bc2c19f6] Stage class: RandomForestClassifier
+2021-10-01 02:17:06 INFO  Instrumentation:54 - [bc2c19f6] Stage uid: RandomForestClassifier_bbb275c7fb01
+2021-10-01 02:17:06 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2021-10-01 02:17:06 INFO  FileSourceStrategy:54 - Post-Scan Filters: AtLeastNNulls(n, cast(Survived#11 as float),cast(Pclass#12 as float),CASE WHEN (Sex#14 = null) THEN null ELSE Sex#14 END,cast(Age#15 as float),cast(Fare#19 as float),CASE WHEN (Embarked#21 = null) THEN null ELSE Embarked#21 END)
+2021-10-01 02:17:06 INFO  FileSourceStrategy:54 - Output Data Schema: struct<PassengerId: string, Survived: string, Pclass: string, Name: string, Sex: string ... 10 more fields>
+2021-10-01 02:17:06 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 42
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 116
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 94
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 136
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 126
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 105
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 100
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 121
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 125
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 107
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 118
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 99
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 93
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_4_piece0 on namenode:40347 in memory (size: 10.7 KB, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_4_piece0 on datanode2:35737 in memory (size: 10.7 KB, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  CodeGenerator:54 - Code generated in 291.394755 ms
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 108
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 98
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 109
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 102
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 135
+2021-10-01 02:17:07 INFO  MemoryStore:54 - Block broadcast_9 stored as values in memory (estimated size 284.5 KB, free 91.8 MB)
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_8_piece0 on datanode2:35737 in memory (size: 2009.0 B, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  MemoryStore:54 - Block broadcast_9_piece0 stored as bytes in memory (estimated size 24.8 KB, free 91.7 MB)
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on namenode:40347 (size: 24.8 KB, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  SparkContext:54 - Created broadcast 9 from rdd at Instrumentation.scala:60
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_8_piece0 on namenode:40347 in memory (size: 2009.0 B, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 129
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 104
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 139
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 131
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 137
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_7_piece0 on namenode:40347 in memory (size: 10.6 KB, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_7_piece0 on datanode2:35737 in memory (size: 10.6 KB, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  Instrumentation:54 - [bc2c19f6] training: numPartitions=1 storageLevel=StorageLevel(1 replicas)
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 127
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 115
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 113
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 114
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 123
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 101
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 130
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 103
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_6_piece0 on datanode2:35737 in memory (size: 24.8 KB, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_6_piece0 on namenode:40347 in memory (size: 24.8 KB, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 142
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 138
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 110
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 140
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 144
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 120
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 148
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 111
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 124
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 143
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 117
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on datanode2:35737 in memory (size: 2017.0 B, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on namenode:40347 in memory (size: 2017.0 B, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 96
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 147
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 128
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 145
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 122
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 133
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 134
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 119
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 112
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 146
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 106
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 132
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 97
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 141
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 95
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned shuffle 1
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 8
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 55
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 88
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 13
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 68
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 69
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 86
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 87
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 23
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 59
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 77
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 31
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned shuffle 0
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 30
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 53
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 75
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 52
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 82
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 3
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 56
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 6
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 89
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 20
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 11
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_0_piece0 on datanode2:35737 in memory (size: 24.8 KB, free: 93.3 MB)
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_0_piece0 on namenode:40347 in memory (size: 24.8 KB, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 85
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 36
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 18
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 67
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 29
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 39
+2021-10-01 02:17:07 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2021-10-01 02:17:07 INFO  FileSourceStrategy:54 - Post-Scan Filters: AtLeastNNulls(n, cast(Survived#11 as float),cast(Pclass#12 as float),CASE WHEN (Sex#14 = null) THEN null ELSE Sex#14 END,cast(Age#15 as float),cast(Fare#19 as float),CASE WHEN (Embarked#21 = null) THEN null ELSE Embarked#21 END)
+2021-10-01 02:17:07 INFO  FileSourceStrategy:54 - Output Data Schema: struct<PassengerId: string, Survived: string, Pclass: string, Name: string, Sex: string ... 10 more fields>
+2021-10-01 02:17:07 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_2_piece0 on namenode:40347 in memory (size: 24.8 KB, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 44
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 74
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 45
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 15
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 49
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 76
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 14
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 37
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 50
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 70
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 64
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 62
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 27
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 84
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 38
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 71
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 17
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 24
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 48
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 58
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 79
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 51
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 63
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 90
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 43
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 33
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 40
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 46
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 83
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 57
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 2
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 10
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 22
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 32
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 66
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 61
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 73
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_1_piece0 on datanode2:35737 in memory (size: 4.5 KB, free: 93.3 MB)
+2021-10-01 02:17:07 INFO  CodeGenerator:54 - Code generated in 12.933222 ms
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_1_piece0 on namenode:40347 in memory (size: 4.5 KB, free: 93.3 MB)
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 81
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 26
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 5
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 16
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 7
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 34
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 28
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 19
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 1
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 72
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 92
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 65
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 91
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 80
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 12
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 4
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 54
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 9
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 60
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 25
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_3_piece0 on datanode2:35737 in memory (size: 24.8 KB, free: 93.3 MB)
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Removed broadcast_3_piece0 on namenode:40347 in memory (size: 24.8 KB, free: 93.3 MB)
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 47
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 35
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 78
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 41
+2021-10-01 02:17:07 INFO  ContextCleaner:54 - Cleaned accumulator 21
+2021-10-01 02:17:07 INFO  CodeGenerator:54 - Code generated in 30.505485 ms
+2021-10-01 02:17:07 INFO  CodeGenerator:54 - Code generated in 82.483823 ms
+2021-10-01 02:17:07 INFO  MemoryStore:54 - Block broadcast_10 stored as values in memory (estimated size 284.5 KB, free 92.7 MB)
+2021-10-01 02:17:07 INFO  MemoryStore:54 - Block broadcast_10_piece0 stored as bytes in memory (estimated size 24.8 KB, free 92.7 MB)
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on namenode:40347 (size: 24.8 KB, free: 93.3 MB)
+2021-10-01 02:17:07 INFO  SparkContext:54 - Created broadcast 10 from take at Classifier.scala:111
+2021-10-01 02:17:07 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2021-10-01 02:17:07 INFO  SparkContext:54 - Starting job: take at Classifier.scala:111
+2021-10-01 02:17:07 INFO  DAGScheduler:54 - Registering RDD 31 (take at Classifier.scala:111)
+2021-10-01 02:17:07 INFO  DAGScheduler:54 - Got job 3 (take at Classifier.scala:111) with 1 output partitions
+2021-10-01 02:17:07 INFO  DAGScheduler:54 - Final stage: ResultStage 6 (take at Classifier.scala:111)
+2021-10-01 02:17:07 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 5)
+2021-10-01 02:17:07 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 5)
+2021-10-01 02:17:07 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 5 (MapPartitionsRDD[31] at take at Classifier.scala:111), which has no missing parents
+2021-10-01 02:17:07 INFO  MemoryStore:54 - Block broadcast_11 stored as values in memory (estimated size 51.4 KB, free 92.6 MB)
+2021-10-01 02:17:07 INFO  MemoryStore:54 - Block broadcast_11_piece0 stored as bytes in memory (estimated size 21.8 KB, free 92.6 MB)
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on namenode:40347 (size: 21.8 KB, free: 93.2 MB)
+2021-10-01 02:17:07 INFO  SparkContext:54 - Created broadcast 11 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:07 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[31] at take at Classifier.scala:111) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:07 INFO  YarnScheduler:54 - Adding task set 5.0 with 1 tasks
+2021-10-01 02:17:07 INFO  TaskSetManager:54 - Starting task 0.0 in stage 5.0 (TID 5, datanode2, executor 1, partition 0, NODE_LOCAL, 8333 bytes)
+2021-10-01 02:17:07 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on datanode2:35737 (size: 21.8 KB, free: 93.3 MB)
+2021-10-01 02:17:08 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on datanode2:35737 (size: 24.8 KB, free: 93.3 MB)
+2021-10-01 02:17:08 INFO  TaskSetManager:54 - Finished task 0.0 in stage 5.0 (TID 5) in 577 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:08 INFO  YarnScheduler:54 - Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - ShuffleMapStage 5 (take at Classifier.scala:111) finished in 0.597 s
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - looking for newly runnable stages
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - running: Set()
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - waiting: Set(ResultStage 6)
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - failed: Set()
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - Submitting ResultStage 6 (MapPartitionsRDD[35] at take at Classifier.scala:111), which has no missing parents
+2021-10-01 02:17:08 INFO  MemoryStore:54 - Block broadcast_12 stored as values in memory (estimated size 7.8 KB, free 92.6 MB)
+2021-10-01 02:17:08 INFO  MemoryStore:54 - Block broadcast_12_piece0 stored as bytes in memory (estimated size 4.1 KB, free 92.6 MB)
+2021-10-01 02:17:08 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on namenode:40347 (size: 4.1 KB, free: 93.2 MB)
+2021-10-01 02:17:08 INFO  SparkContext:54 - Created broadcast 12 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[35] at take at Classifier.scala:111) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:08 INFO  YarnScheduler:54 - Adding task set 6.0 with 1 tasks
+2021-10-01 02:17:08 INFO  TaskSetManager:54 - Starting task 0.0 in stage 6.0 (TID 6, datanode2, executor 1, partition 0, NODE_LOCAL, 7778 bytes)
+2021-10-01 02:17:08 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on datanode2:35737 (size: 4.1 KB, free: 93.3 MB)
+2021-10-01 02:17:08 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 2 to 10.250.64.26:35886
+2021-10-01 02:17:08 INFO  TaskSetManager:54 - Finished task 0.0 in stage 6.0 (TID 6) in 54 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:08 INFO  YarnScheduler:54 - Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - ResultStage 6 (take at Classifier.scala:111) finished in 0.063 s
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - Job 3 finished: take at Classifier.scala:111, took 0.665384 s
+2021-10-01 02:17:08 INFO  RandomForestClassifier:54 - org.apache.spark.ml.classification.RandomForestClassifier inferred 2 classes for labelCol=RandomForestClassifier_bbb275c7fb01__labelCol since numClasses was not specified in the column metadata.
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 177
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 207
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 174
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 169
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 173
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 163
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 212
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 215
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 164
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 204
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 190
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 225
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 221
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 166
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 180
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 230
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 178
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 205
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 179
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 197
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 162
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 209
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 228
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 200
+2021-10-01 02:17:08 INFO  BlockManagerInfo:54 - Removed broadcast_11_piece0 on datanode2:35737 in memory (size: 21.8 KB, free: 93.3 MB)
+2021-10-01 02:17:08 INFO  BlockManagerInfo:54 - Removed broadcast_11_piece0 on namenode:40347 in memory (size: 21.8 KB, free: 93.2 MB)
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 187
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 206
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 223
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 191
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 198
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 185
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 199
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 218
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 211
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 160
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 222
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 182
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 213
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 226
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 202
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 194
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 196
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 188
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 183
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 175
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 229
+2021-10-01 02:17:08 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2021-10-01 02:17:08 INFO  FileSourceStrategy:54 - Post-Scan Filters: AtLeastNNulls(n, cast(Survived#11 as float),cast(Pclass#12 as float),CASE WHEN (Sex#14 = null) THEN null ELSE Sex#14 END,cast(Age#15 as float),cast(Fare#19 as float),CASE WHEN (Embarked#21 = null) THEN null ELSE Embarked#21 END)
+2021-10-01 02:17:08 INFO  FileSourceStrategy:54 - Output Data Schema: struct<PassengerId: string, Survived: string, Pclass: string, Name: string, Sex: string ... 10 more fields>
+2021-10-01 02:17:08 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2021-10-01 02:17:08 INFO  BlockManagerInfo:54 - Removed broadcast_12_piece0 on datanode2:35737 in memory (size: 4.1 KB, free: 93.3 MB)
+2021-10-01 02:17:08 INFO  BlockManagerInfo:54 - Removed broadcast_12_piece0 on namenode:40347 in memory (size: 4.1 KB, free: 93.3 MB)
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 186
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 219
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 224
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 170
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 208
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 159
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 165
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 217
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 189
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 167
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 210
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 227
+2021-10-01 02:17:08 INFO  CodeGenerator:54 - Code generated in 50.260074 ms
+2021-10-01 02:17:08 INFO  BlockManagerInfo:54 - Removed broadcast_10_piece0 on datanode2:35737 in memory (size: 24.8 KB, free: 93.3 MB)
+2021-10-01 02:17:08 INFO  BlockManagerInfo:54 - Removed broadcast_10_piece0 on namenode:40347 in memory (size: 24.8 KB, free: 93.3 MB)
+2021-10-01 02:17:08 INFO  MemoryStore:54 - Block broadcast_13 stored as values in memory (estimated size 284.5 KB, free 92.7 MB)
+2021-10-01 02:17:08 INFO  MemoryStore:54 - Block broadcast_13_piece0 stored as bytes in memory (estimated size 24.8 KB, free 92.7 MB)
+2021-10-01 02:17:08 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on namenode:40347 (size: 24.8 KB, free: 93.3 MB)
+2021-10-01 02:17:08 INFO  SparkContext:54 - Created broadcast 13 from rdd at Classifier.scala:82
+2021-10-01 02:17:08 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 176
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 161
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 193
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 203
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 192
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 214
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 220
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 168
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 231
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 201
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned shuffle 2
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 184
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 195
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 171
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 181
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 172
+2021-10-01 02:17:08 INFO  ContextCleaner:54 - Cleaned accumulator 216
+2021-10-01 02:17:08 INFO  Instrumentation:54 - [bc2c19f6] {"labelCol":"Survived","featuresCol":"features","maxDepth":3}
+2021-10-01 02:17:08 INFO  SparkContext:54 - Starting job: take at DecisionTreeMetadata.scala:112
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - Got job 4 (take at DecisionTreeMetadata.scala:112) with 1 output partitions
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - Final stage: ResultStage 7 (take at DecisionTreeMetadata.scala:112)
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - Parents of final stage: List()
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - Missing parents: List()
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - Submitting ResultStage 7 (MapPartitionsRDD[42] at map at DecisionTreeMetadata.scala:112), which has no missing parents
+2021-10-01 02:17:08 INFO  MemoryStore:54 - Block broadcast_14 stored as values in memory (estimated size 55.5 KB, free 92.6 MB)
+2021-10-01 02:17:08 INFO  MemoryStore:54 - Block broadcast_14_piece0 stored as bytes in memory (estimated size 21.8 KB, free 92.6 MB)
+2021-10-01 02:17:08 INFO  BlockManagerInfo:54 - Added broadcast_14_piece0 in memory on namenode:40347 (size: 21.8 KB, free: 93.2 MB)
+2021-10-01 02:17:08 INFO  SparkContext:54 - Created broadcast 14 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:08 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 7 (MapPartitionsRDD[42] at map at DecisionTreeMetadata.scala:112) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:08 INFO  YarnScheduler:54 - Adding task set 7.0 with 1 tasks
+2021-10-01 02:17:08 INFO  TaskSetManager:54 - Starting task 0.0 in stage 7.0 (TID 7, datanode2, executor 1, partition 0, NODE_LOCAL, 8344 bytes)
+2021-10-01 02:17:08 INFO  BlockManagerInfo:54 - Added broadcast_14_piece0 in memory on datanode2:35737 (size: 21.8 KB, free: 93.3 MB)
+2021-10-01 02:17:09 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on datanode2:35737 (size: 24.8 KB, free: 93.3 MB)
+2021-10-01 02:17:09 INFO  TaskSetManager:54 - Finished task 0.0 in stage 7.0 (TID 7) in 238 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:09 INFO  YarnScheduler:54 - Removed TaskSet 7.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - ResultStage 7 (take at DecisionTreeMetadata.scala:112) finished in 0.246 s
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Job 4 finished: take at DecisionTreeMetadata.scala:112, took 0.249107 s
+2021-10-01 02:17:09 INFO  SparkContext:54 - Starting job: count at DecisionTreeMetadata.scala:118
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Got job 5 (count at DecisionTreeMetadata.scala:118) with 1 output partitions
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Final stage: ResultStage 8 (count at DecisionTreeMetadata.scala:118)
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Parents of final stage: List()
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Missing parents: List()
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Submitting ResultStage 8 (MapPartitionsRDD[41] at retag at RandomForest.scala:104), which has no missing parents
+2021-10-01 02:17:09 INFO  MemoryStore:54 - Block broadcast_15 stored as values in memory (estimated size 55.1 KB, free 92.6 MB)
+2021-10-01 02:17:09 INFO  MemoryStore:54 - Block broadcast_15_piece0 stored as bytes in memory (estimated size 21.7 KB, free 92.5 MB)
+2021-10-01 02:17:09 INFO  BlockManagerInfo:54 - Added broadcast_15_piece0 in memory on namenode:40347 (size: 21.7 KB, free: 93.2 MB)
+2021-10-01 02:17:09 INFO  SparkContext:54 - Created broadcast 15 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 8 (MapPartitionsRDD[41] at retag at RandomForest.scala:104) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:09 INFO  YarnScheduler:54 - Adding task set 8.0 with 1 tasks
+2021-10-01 02:17:09 INFO  TaskSetManager:54 - Starting task 0.0 in stage 8.0 (TID 8, datanode2, executor 1, partition 0, NODE_LOCAL, 8344 bytes)
+2021-10-01 02:17:09 INFO  BlockManagerInfo:54 - Added broadcast_15_piece0 in memory on datanode2:35737 (size: 21.7 KB, free: 93.2 MB)
+2021-10-01 02:17:09 INFO  TaskSetManager:54 - Finished task 0.0 in stage 8.0 (TID 8) in 118 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:09 INFO  YarnScheduler:54 - Removed TaskSet 8.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - ResultStage 8 (count at DecisionTreeMetadata.scala:118) finished in 0.129 s
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Job 5 finished: count at DecisionTreeMetadata.scala:118, took 0.134482 s
+2021-10-01 02:17:09 INFO  Instrumentation:54 - [bc2c19f6] {"numFeatures":5}
+2021-10-01 02:17:09 INFO  Instrumentation:54 - [bc2c19f6] {"numClasses":2}
+2021-10-01 02:17:09 INFO  Instrumentation:54 - [bc2c19f6] {"numExamples":551}
+2021-10-01 02:17:09 INFO  SparkContext:54 - Starting job: collectAsMap at RandomForest.scala:927
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Registering RDD 44 (flatMap at RandomForest.scala:919)
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Got job 6 (collectAsMap at RandomForest.scala:927) with 1 output partitions
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Final stage: ResultStage 10 (collectAsMap at RandomForest.scala:927)
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 9)
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 9)
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 9 (MapPartitionsRDD[44] at flatMap at RandomForest.scala:919), which has no missing parents
+2021-10-01 02:17:09 INFO  MemoryStore:54 - Block broadcast_16 stored as values in memory (estimated size 58.2 KB, free 92.5 MB)
+2021-10-01 02:17:09 INFO  MemoryStore:54 - Block broadcast_16_piece0 stored as bytes in memory (estimated size 23.2 KB, free 92.5 MB)
+2021-10-01 02:17:09 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on namenode:40347 (size: 23.2 KB, free: 93.2 MB)
+2021-10-01 02:17:09 INFO  SparkContext:54 - Created broadcast 16 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:09 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 9 (MapPartitionsRDD[44] at flatMap at RandomForest.scala:919) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:09 INFO  YarnScheduler:54 - Adding task set 9.0 with 1 tasks
+2021-10-01 02:17:09 INFO  TaskSetManager:54 - Starting task 0.0 in stage 9.0 (TID 9, datanode2, executor 1, partition 0, NODE_LOCAL, 8442 bytes)
+2021-10-01 02:17:09 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on datanode2:35737 (size: 23.2 KB, free: 93.2 MB)
+2021-10-01 02:17:10 INFO  TaskSetManager:54 - Finished task 0.0 in stage 9.0 (TID 9) in 855 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:10 INFO  YarnScheduler:54 - Removed TaskSet 9.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - ShuffleMapStage 9 (flatMap at RandomForest.scala:919) finished in 0.873 s
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - looking for newly runnable stages
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - running: Set()
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - waiting: Set(ResultStage 10)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - failed: Set()
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Submitting ResultStage 10 (MapPartitionsRDD[46] at map at RandomForest.scala:922), which has no missing parents
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_17 stored as values in memory (estimated size 60.6 KB, free 92.4 MB)
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_17_piece0 stored as bytes in memory (estimated size 24.6 KB, free 92.4 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on namenode:40347 (size: 24.6 KB, free: 93.2 MB)
+2021-10-01 02:17:10 INFO  SparkContext:54 - Created broadcast 17 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 10 (MapPartitionsRDD[46] at map at RandomForest.scala:922) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:10 INFO  YarnScheduler:54 - Adding task set 10.0 with 1 tasks
+2021-10-01 02:17:10 INFO  TaskSetManager:54 - Starting task 0.0 in stage 10.0 (TID 10, datanode2, executor 1, partition 0, NODE_LOCAL, 7673 bytes)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on datanode2:35737 (size: 24.6 KB, free: 93.2 MB)
+2021-10-01 02:17:10 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 3 to 10.250.64.26:35886
+2021-10-01 02:17:10 INFO  TaskSetManager:54 - Finished task 0.0 in stage 10.0 (TID 10) in 98 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:10 INFO  YarnScheduler:54 - Removed TaskSet 10.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - ResultStage 10 (collectAsMap at RandomForest.scala:927) finished in 0.113 s
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Job 6 finished: collectAsMap at RandomForest.scala:927, took 0.990624 s
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_18 stored as values in memory (estimated size 2.2 KB, free 92.4 MB)
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_18_piece0 stored as bytes in memory (estimated size 484.0 B, free 92.4 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_18_piece0 in memory on namenode:40347 (size: 484.0 B, free: 93.2 MB)
+2021-10-01 02:17:10 INFO  SparkContext:54 - Created broadcast 18 from broadcast at RandomForest.scala:517
+2021-10-01 02:17:10 INFO  SparkContext:54 - Starting job: collectAsMap at RandomForest.scala:567
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Registering RDD 49 (mapPartitions at RandomForest.scala:538)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Got job 7 (collectAsMap at RandomForest.scala:567) with 1 output partitions
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Final stage: ResultStage 12 (collectAsMap at RandomForest.scala:567)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 11)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 11)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 11 (MapPartitionsRDD[49] at mapPartitions at RandomForest.scala:538), which has no missing parents
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_19 stored as values in memory (estimated size 62.3 KB, free 92.3 MB)
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_19_piece0 stored as bytes in memory (estimated size 25.1 KB, free 92.3 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_19_piece0 in memory on namenode:40347 (size: 25.1 KB, free: 93.1 MB)
+2021-10-01 02:17:10 INFO  SparkContext:54 - Created broadcast 19 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 11 (MapPartitionsRDD[49] at mapPartitions at RandomForest.scala:538) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:10 INFO  YarnScheduler:54 - Adding task set 11.0 with 1 tasks
+2021-10-01 02:17:10 INFO  TaskSetManager:54 - Starting task 0.0 in stage 11.0 (TID 11, datanode2, executor 1, partition 0, NODE_LOCAL, 8333 bytes)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_19_piece0 in memory on datanode2:35737 (size: 25.1 KB, free: 93.2 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added rdd_48_0 in memory on datanode2:35737 (size: 131.1 KB, free: 93.0 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_18_piece0 in memory on datanode2:35737 (size: 484.0 B, free: 93.0 MB)
+2021-10-01 02:17:10 INFO  TaskSetManager:54 - Finished task 0.0 in stage 11.0 (TID 11) in 268 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:10 INFO  YarnScheduler:54 - Removed TaskSet 11.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - ShuffleMapStage 11 (mapPartitions at RandomForest.scala:538) finished in 0.283 s
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - looking for newly runnable stages
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - running: Set()
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - waiting: Set(ResultStage 12)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - failed: Set()
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Submitting ResultStage 12 (MapPartitionsRDD[51] at map at RandomForest.scala:557), which has no missing parents
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_20 stored as values in memory (estimated size 6.6 KB, free 92.3 MB)
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_20_piece0 stored as bytes in memory (estimated size 3.1 KB, free 92.3 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_20_piece0 in memory on namenode:40347 (size: 3.1 KB, free: 93.1 MB)
+2021-10-01 02:17:10 INFO  SparkContext:54 - Created broadcast 20 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 12 (MapPartitionsRDD[51] at map at RandomForest.scala:557) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:10 INFO  YarnScheduler:54 - Adding task set 12.0 with 1 tasks
+2021-10-01 02:17:10 INFO  TaskSetManager:54 - Starting task 0.0 in stage 12.0 (TID 12, datanode2, executor 1, partition 0, NODE_LOCAL, 7673 bytes)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_20_piece0 in memory on datanode2:35737 (size: 3.1 KB, free: 93.0 MB)
+2021-10-01 02:17:10 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 4 to 10.250.64.26:35886
+2021-10-01 02:17:10 INFO  TaskSetManager:54 - Finished task 0.0 in stage 12.0 (TID 12) in 74 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:10 INFO  YarnScheduler:54 - Removed TaskSet 12.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - ResultStage 12 (collectAsMap at RandomForest.scala:567) finished in 0.081 s
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Job 7 finished: collectAsMap at RandomForest.scala:567, took 0.373345 s
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_21 stored as values in memory (estimated size 4.8 KB, free 92.3 MB)
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_21_piece0 stored as bytes in memory (estimated size 704.0 B, free 92.3 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_21_piece0 in memory on namenode:40347 (size: 704.0 B, free: 93.1 MB)
+2021-10-01 02:17:10 INFO  SparkContext:54 - Created broadcast 21 from broadcast at RandomForest.scala:517
+2021-10-01 02:17:10 INFO  SparkContext:54 - Starting job: collectAsMap at RandomForest.scala:567
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Registering RDD 52 (mapPartitions at RandomForest.scala:538)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Got job 8 (collectAsMap at RandomForest.scala:567) with 1 output partitions
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Final stage: ResultStage 14 (collectAsMap at RandomForest.scala:567)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 13)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 13)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 13 (MapPartitionsRDD[52] at mapPartitions at RandomForest.scala:538), which has no missing parents
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_22 stored as values in memory (estimated size 69.2 KB, free 92.2 MB)
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_22_piece0 stored as bytes in memory (estimated size 27.8 KB, free 92.2 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_22_piece0 in memory on namenode:40347 (size: 27.8 KB, free: 93.1 MB)
+2021-10-01 02:17:10 INFO  SparkContext:54 - Created broadcast 22 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 13 (MapPartitionsRDD[52] at mapPartitions at RandomForest.scala:538) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:10 INFO  YarnScheduler:54 - Adding task set 13.0 with 1 tasks
+2021-10-01 02:17:10 INFO  TaskSetManager:54 - Starting task 0.0 in stage 13.0 (TID 13, datanode2, executor 1, partition 0, PROCESS_LOCAL, 8333 bytes)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_22_piece0 in memory on datanode2:35737 (size: 27.8 KB, free: 93.0 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_21_piece0 in memory on datanode2:35737 (size: 704.0 B, free: 93.0 MB)
+2021-10-01 02:17:10 INFO  TaskSetManager:54 - Finished task 0.0 in stage 13.0 (TID 13) in 59 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:10 INFO  YarnScheduler:54 - Removed TaskSet 13.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - ShuffleMapStage 13 (mapPartitions at RandomForest.scala:538) finished in 0.067 s
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - looking for newly runnable stages
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - running: Set()
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - waiting: Set(ResultStage 14)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - failed: Set()
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Submitting ResultStage 14 (MapPartitionsRDD[54] at map at RandomForest.scala:557), which has no missing parents
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_23 stored as values in memory (estimated size 9.7 KB, free 92.2 MB)
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 363
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 360
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 369
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 336
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 381
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 291
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 333
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 315
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 334
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_23_piece0 stored as bytes in memory (estimated size 4.3 KB, free 92.2 MB)
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 320
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 244
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 307
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 277
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 340
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 273
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 274
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 271
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 327
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 245
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 288
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 304
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 289
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_23_piece0 in memory on namenode:40347 (size: 4.3 KB, free: 93.1 MB)
+2021-10-01 02:17:10 INFO  SparkContext:54 - Created broadcast 23 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 14 (MapPartitionsRDD[54] at map at RandomForest.scala:557) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:10 INFO  YarnScheduler:54 - Adding task set 14.0 with 1 tasks
+2021-10-01 02:17:10 INFO  TaskSetManager:54 - Starting task 0.0 in stage 14.0 (TID 14, datanode2, executor 1, partition 0, NODE_LOCAL, 7673 bytes)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Removed broadcast_16_piece0 on datanode2:35737 in memory (size: 23.2 KB, free: 93.0 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Removed broadcast_16_piece0 on namenode:40347 in memory (size: 23.2 KB, free: 93.1 MB)
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 356
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 384
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 308
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 386
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 375
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 301
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 335
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 268
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 303
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 248
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 316
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 272
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 372
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 257
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_23_piece0 in memory on datanode2:35737 (size: 4.3 KB, free: 93.0 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Removed broadcast_14_piece0 on namenode:40347 in memory (size: 21.8 KB, free: 93.1 MB)
+2021-10-01 02:17:10 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 5 to 10.250.64.26:35886
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Removed broadcast_14_piece0 on datanode2:35737 in memory (size: 21.8 KB, free: 93.0 MB)
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 365
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 300
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 357
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 374
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 376
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 306
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 285
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 294
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 302
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 246
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 387
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 318
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 380
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 391
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 253
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 260
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 313
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Removed broadcast_20_piece0 on namenode:40347 in memory (size: 3.1 KB, free: 93.1 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Removed broadcast_20_piece0 on datanode2:35737 in memory (size: 3.1 KB, free: 93.0 MB)
+2021-10-01 02:17:10 INFO  TaskSetManager:54 - Finished task 0.0 in stage 14.0 (TID 14) in 75 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:10 INFO  YarnScheduler:54 - Removed TaskSet 14.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - ResultStage 14 (collectAsMap at RandomForest.scala:567) finished in 0.098 s
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Job 8 finished: collectAsMap at RandomForest.scala:567, took 0.171749 s
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_24 stored as values in memory (estimated size 9.7 KB, free 92.3 MB)
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_24_piece0 stored as bytes in memory (estimated size 1089.0 B, free 92.3 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_24_piece0 in memory on namenode:40347 (size: 1089.0 B, free: 93.1 MB)
+2021-10-01 02:17:10 INFO  SparkContext:54 - Created broadcast 24 from broadcast at RandomForest.scala:517
+2021-10-01 02:17:10 INFO  SparkContext:54 - Starting job: collectAsMap at RandomForest.scala:567
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 325
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 258
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 347
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 275
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 305
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 348
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 259
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 342
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 297
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 321
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 256
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 287
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 314
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 251
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 337
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 280
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 358
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 339
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 292
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 322
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 331
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 373
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 346
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 332
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 390
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 343
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 377
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Registering RDD 55 (mapPartitions at RandomForest.scala:538)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Got job 9 (collectAsMap at RandomForest.scala:567) with 1 output partitions
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Final stage: ResultStage 16 (collectAsMap at RandomForest.scala:567)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 15)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 15)
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 15 (MapPartitionsRDD[55] at mapPartitions at RandomForest.scala:538), which has no missing parents
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Removed broadcast_17_piece0 on datanode2:35737 in memory (size: 24.6 KB, free: 93.1 MB)
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_25 stored as values in memory (estimated size 79.4 KB, free 92.2 MB)
+2021-10-01 02:17:10 INFO  MemoryStore:54 - Block broadcast_25_piece0 stored as bytes in memory (estimated size 31.3 KB, free 92.2 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Added broadcast_25_piece0 in memory on namenode:40347 (size: 31.3 KB, free: 93.1 MB)
+2021-10-01 02:17:10 INFO  BlockManagerInfo:54 - Removed broadcast_17_piece0 on namenode:40347 in memory (size: 24.6 KB, free: 93.1 MB)
+2021-10-01 02:17:10 INFO  SparkContext:54 - Created broadcast 25 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:10 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 15 (MapPartitionsRDD[55] at mapPartitions at RandomForest.scala:538) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:10 INFO  YarnScheduler:54 - Adding task set 15.0 with 1 tasks
+2021-10-01 02:17:10 INFO  TaskSetManager:54 - Starting task 0.0 in stage 15.0 (TID 15, datanode2, executor 1, partition 0, PROCESS_LOCAL, 8333 bytes)
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned shuffle 3
+2021-10-01 02:17:10 INFO  ContextCleaner:54 - Cleaned accumulator 370
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_18_piece0 on namenode:40347 in memory (size: 484.0 B, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_18_piece0 on datanode2:35737 in memory (size: 484.0 B, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_25_piece0 in memory on datanode2:35737 (size: 31.3 KB, free: 93.0 MB)
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 261
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_24_piece0 in memory on datanode2:35737 (size: 1089.0 B, free: 93.0 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_15_piece0 on namenode:40347 in memory (size: 21.7 KB, free: 93.2 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_15_piece0 on datanode2:35737 in memory (size: 21.7 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 242
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 352
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 282
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 367
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 354
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 388
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 254
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 368
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 383
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 330
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 309
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 299
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 252
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 263
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 326
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 286
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 247
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 385
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 269
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 366
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 249
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 349
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 310
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 262
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 364
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 279
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 284
+2021-10-01 02:17:11 INFO  TaskSetManager:54 - Finished task 0.0 in stage 15.0 (TID 15) in 71 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned shuffle 4
+2021-10-01 02:17:11 INFO  YarnScheduler:54 - Removed TaskSet 15.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - ShuffleMapStage 15 (mapPartitions at RandomForest.scala:538) finished in 0.084 s
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - looking for newly runnable stages
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - running: Set()
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - waiting: Set(ResultStage 16)
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - failed: Set()
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Submitting ResultStage 16 (MapPartitionsRDD[57] at map at RandomForest.scala:557), which has no missing parents
+2021-10-01 02:17:11 INFO  MemoryStore:54 - Block broadcast_26 stored as values in memory (estimated size 13.0 KB, free 92.4 MB)
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 281
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 293
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 350
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 353
+2021-10-01 02:17:11 INFO  MemoryStore:54 - Block broadcast_26_piece0 stored as bytes in memory (estimated size 5.1 KB, free 92.4 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_26_piece0 in memory on namenode:40347 (size: 5.1 KB, free: 93.2 MB)
+2021-10-01 02:17:11 INFO  SparkContext:54 - Created broadcast 26 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 16 (MapPartitionsRDD[57] at map at RandomForest.scala:557) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:11 INFO  YarnScheduler:54 - Adding task set 16.0 with 1 tasks
+2021-10-01 02:17:11 INFO  TaskSetManager:54 - Starting task 0.0 in stage 16.0 (TID 16, datanode2, executor 1, partition 0, NODE_LOCAL, 7673 bytes)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_19_piece0 on namenode:40347 in memory (size: 25.1 KB, free: 93.2 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_19_piece0 on datanode2:35737 in memory (size: 25.1 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 341
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 378
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 351
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 250
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 296
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 311
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 345
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 382
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 317
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 270
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 359
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 276
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 371
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 295
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 264
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 278
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 355
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 290
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 379
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 265
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 338
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 283
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 267
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 328
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 298
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 362
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_26_piece0 in memory on datanode2:35737 (size: 5.1 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 323
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 389
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 344
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 255
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 266
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 319
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 329
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 243
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 324
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 361
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 312
+2021-10-01 02:17:11 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 6 to 10.250.64.26:35886
+2021-10-01 02:17:11 INFO  TaskSetManager:54 - Finished task 0.0 in stage 16.0 (TID 16) in 62 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:11 INFO  YarnScheduler:54 - Removed TaskSet 16.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - ResultStage 16 (collectAsMap at RandomForest.scala:567) finished in 0.070 s
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Job 9 finished: collectAsMap at RandomForest.scala:567, took 0.160466 s
+2021-10-01 02:17:11 INFO  MapPartitionsRDD:54 - Removing RDD 48 from persistence list
+2021-10-01 02:17:11 INFO  BlockManager:54 - Removing RDD 48
+2021-10-01 02:17:11 INFO  RandomForest:54 - Internal timing for DecisionTree:
+2021-10-01 02:17:11 INFO  RandomForest:54 -   init: 1.474183204
+  total: 2.312161652
+  findSplits: 1.052924022
+  findBestSplits: 0.79445185
+  chooseSplits: 0.784829106
+2021-10-01 02:17:11 INFO  SparkContext:54 - Starting job: first at RandomForestClassifier.scala:145
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Got job 10 (first at RandomForestClassifier.scala:145) with 1 output partitions
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Final stage: ResultStage 17 (first at RandomForestClassifier.scala:145)
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Parents of final stage: List()
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Missing parents: List()
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Submitting ResultStage 17 (MapPartitionsRDD[40] at map at Classifier.scala:82), which has no missing parents
+2021-10-01 02:17:11 INFO  MemoryStore:54 - Block broadcast_27 stored as values in memory (estimated size 55.1 KB, free 92.4 MB)
+2021-10-01 02:17:11 INFO  MemoryStore:54 - Block broadcast_27_piece0 stored as bytes in memory (estimated size 21.7 KB, free 92.4 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_27_piece0 in memory on namenode:40347 (size: 21.7 KB, free: 93.2 MB)
+2021-10-01 02:17:11 INFO  SparkContext:54 - Created broadcast 27 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 17 (MapPartitionsRDD[40] at map at Classifier.scala:82) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:11 INFO  YarnScheduler:54 - Adding task set 17.0 with 1 tasks
+2021-10-01 02:17:11 INFO  TaskSetManager:54 - Starting task 0.0 in stage 17.0 (TID 17, datanode2, executor 1, partition 0, NODE_LOCAL, 8344 bytes)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_27_piece0 in memory on datanode2:35737 (size: 21.7 KB, free: 93.2 MB)
+2021-10-01 02:17:11 INFO  TaskSetManager:54 - Finished task 0.0 in stage 17.0 (TID 17) in 64 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:11 INFO  YarnScheduler:54 - Removed TaskSet 17.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - ResultStage 17 (first at RandomForestClassifier.scala:145) finished in 0.076 s
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Job 10 finished: first at RandomForestClassifier.scala:145, took 0.078573 s
+2021-10-01 02:17:11 INFO  Instrumentation:54 - [bc2c19f6] {"numClasses":2}
+2021-10-01 02:17:11 INFO  Instrumentation:54 - [bc2c19f6] {"numFeatures":5}
+2021-10-01 02:17:11 INFO  Instrumentation:54 - [bc2c19f6] training finished
+2021-10-01 02:17:11 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2021-10-01 02:17:11 INFO  FileSourceStrategy:54 - Post-Scan Filters: AtLeastNNulls(n, cast(Survived#11 as float),cast(Pclass#12 as float),CASE WHEN (Sex#14 = null) THEN null ELSE Sex#14 END,cast(Age#15 as float),cast(Fare#19 as float),CASE WHEN (Embarked#21 = null) THEN null ELSE Embarked#21 END)
+2021-10-01 02:17:11 INFO  FileSourceStrategy:54 - Output Data Schema: struct<PassengerId: string, Survived: string, Pclass: string, Name: string, Sex: string ... 10 more fields>
+2021-10-01 02:17:11 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2021-10-01 02:17:11 INFO  CodeGenerator:54 - Code generated in 64.431277 ms
+2021-10-01 02:17:11 INFO  MemoryStore:54 - Block broadcast_28 stored as values in memory (estimated size 284.5 KB, free 92.1 MB)
+2021-10-01 02:17:11 INFO  MemoryStore:54 - Block broadcast_28_piece0 stored as bytes in memory (estimated size 24.8 KB, free 92.1 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_28_piece0 in memory on namenode:40347 (size: 24.8 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  SparkContext:54 - Created broadcast 28 from rdd at MulticlassClassificationEvaluator.scala:79
+2021-10-01 02:17:11 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2021-10-01 02:17:11 INFO  SparkContext:54 - Starting job: collectAsMap at MulticlassMetrics.scala:48
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Registering RDD 63 (map at MulticlassMetrics.scala:45)
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Got job 11 (collectAsMap at MulticlassMetrics.scala:48) with 1 output partitions
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Final stage: ResultStage 19 (collectAsMap at MulticlassMetrics.scala:48)
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 18)
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 18)
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 18 (MapPartitionsRDD[63] at map at MulticlassMetrics.scala:45), which has no missing parents
+2021-10-01 02:17:11 INFO  MemoryStore:54 - Block broadcast_29 stored as values in memory (estimated size 101.3 KB, free 92.0 MB)
+2021-10-01 02:17:11 INFO  MemoryStore:54 - Block broadcast_29_piece0 stored as bytes in memory (estimated size 39.3 KB, free 91.9 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_29_piece0 in memory on namenode:40347 (size: 39.3 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  SparkContext:54 - Created broadcast 29 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 18 (MapPartitionsRDD[63] at map at MulticlassMetrics.scala:45) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:11 INFO  YarnScheduler:54 - Adding task set 18.0 with 1 tasks
+2021-10-01 02:17:11 INFO  TaskSetManager:54 - Starting task 0.0 in stage 18.0 (TID 18, datanode2, executor 1, partition 0, NODE_LOCAL, 8333 bytes)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_29_piece0 in memory on datanode2:35737 (size: 39.3 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_28_piece0 in memory on datanode2:35737 (size: 24.8 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  TaskSetManager:54 - Finished task 0.0 in stage 18.0 (TID 18) in 238 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:11 INFO  YarnScheduler:54 - Removed TaskSet 18.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - ShuffleMapStage 18 (map at MulticlassMetrics.scala:45) finished in 0.248 s
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - looking for newly runnable stages
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - running: Set()
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - waiting: Set(ResultStage 19)
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - failed: Set()
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Submitting ResultStage 19 (ShuffledRDD[64] at reduceByKey at MulticlassMetrics.scala:47), which has no missing parents
+2021-10-01 02:17:11 INFO  MemoryStore:54 - Block broadcast_30 stored as values in memory (estimated size 3.3 KB, free 91.9 MB)
+2021-10-01 02:17:11 INFO  MemoryStore:54 - Block broadcast_30_piece0 stored as bytes in memory (estimated size 2043.0 B, free 91.9 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_30_piece0 in memory on namenode:40347 (size: 2043.0 B, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  SparkContext:54 - Created broadcast 30 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 19 (ShuffledRDD[64] at reduceByKey at MulticlassMetrics.scala:47) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:11 INFO  YarnScheduler:54 - Adding task set 19.0 with 1 tasks
+2021-10-01 02:17:11 INFO  TaskSetManager:54 - Starting task 0.0 in stage 19.0 (TID 19, datanode2, executor 1, partition 0, NODE_LOCAL, 7673 bytes)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_30_piece0 in memory on datanode2:35737 (size: 2043.0 B, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 7 to 10.250.64.26:35886
+2021-10-01 02:17:11 INFO  TaskSetManager:54 - Finished task 0.0 in stage 19.0 (TID 19) in 21 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:11 INFO  YarnScheduler:54 - Removed TaskSet 19.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - ResultStage 19 (collectAsMap at MulticlassMetrics.scala:48) finished in 0.031 s
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 422
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 433
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 437
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 438
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 474
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned shuffle 6
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 234
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 445
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 426
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 457
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 470
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 440
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 421
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 419
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Job 11 finished: collectAsMap at MulticlassMetrics.scala:48, took 0.294571 s
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_26_piece0 on namenode:40347 in memory (size: 5.1 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_26_piece0 on datanode2:35737 in memory (size: 5.1 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  SparkContext:54 - Starting job: countByValue at MulticlassMetrics.scala:42
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Registering RDD 67 (countByValue at MulticlassMetrics.scala:42)
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Got job 12 (countByValue at MulticlassMetrics.scala:42) with 1 output partitions
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Final stage: ResultStage 21 (countByValue at MulticlassMetrics.scala:42)
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 20)
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 20)
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 20 (MapPartitionsRDD[67] at countByValue at MulticlassMetrics.scala:42), which has no missing parents
+2021-10-01 02:17:11 INFO  MemoryStore:54 - Block broadcast_31 stored as values in memory (estimated size 101.7 KB, free 91.8 MB)
+2021-10-01 02:17:11 INFO  MemoryStore:54 - Block broadcast_31_piece0 stored as bytes in memory (estimated size 39.5 KB, free 91.8 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_31_piece0 in memory on namenode:40347 (size: 39.5 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  SparkContext:54 - Created broadcast 31 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:11 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 20 (MapPartitionsRDD[67] at countByValue at MulticlassMetrics.scala:42) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:11 INFO  YarnScheduler:54 - Adding task set 20.0 with 1 tasks
+2021-10-01 02:17:11 INFO  TaskSetManager:54 - Starting task 0.0 in stage 20.0 (TID 20, datanode2, executor 1, partition 0, NODE_LOCAL, 8333 bytes)
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 479
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 503
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 436
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 460
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 430
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned shuffle 5
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 504
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 494
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 239
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 399
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 502
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 400
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 472
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 516
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 461
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 423
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 233
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 442
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 450
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 402
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 404
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 428
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 506
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 235
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_23_piece0 on namenode:40347 in memory (size: 4.3 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_23_piece0 on datanode2:35737 in memory (size: 4.3 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 403
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 482
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 514
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 505
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 454
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 489
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 463
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 471
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 456
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 453
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 491
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 406
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 444
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 495
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 488
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 432
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 420
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 496
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 416
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 477
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Added broadcast_31_piece0 in memory on datanode2:35737 (size: 39.5 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_24_piece0 on namenode:40347 in memory (size: 1089.0 B, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_24_piece0 on datanode2:35737 in memory (size: 1089.0 B, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 447
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 439
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 409
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 493
+2021-10-01 02:17:11 INFO  ContextCleaner:54 - Cleaned accumulator 237
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_27_piece0 on namenode:40347 in memory (size: 21.7 KB, free: 93.1 MB)
+2021-10-01 02:17:11 INFO  BlockManagerInfo:54 - Removed broadcast_27_piece0 on datanode2:35737 in memory (size: 21.7 KB, free: 93.1 MB)
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 455
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 414
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 501
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 467
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 431
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 452
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 487
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 418
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 478
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 510
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 458
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 401
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 413
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 462
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 466
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 232
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 236
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 410
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 509
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 464
+2021-10-01 02:17:12 INFO  BlockManagerInfo:54 - Removed broadcast_13_piece0 on namenode:40347 in memory (size: 24.8 KB, free: 93.1 MB)
+2021-10-01 02:17:12 INFO  BlockManagerInfo:54 - Removed broadcast_13_piece0 on datanode2:35737 in memory (size: 24.8 KB, free: 93.1 MB)
+2021-10-01 02:17:12 INFO  TaskSetManager:54 - Finished task 0.0 in stage 20.0 (TID 20) in 86 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:12 INFO  YarnScheduler:54 - Removed TaskSet 20.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:12 INFO  DAGScheduler:54 - ShuffleMapStage 20 (countByValue at MulticlassMetrics.scala:42) finished in 0.095 s
+2021-10-01 02:17:12 INFO  DAGScheduler:54 - looking for newly runnable stages
+2021-10-01 02:17:12 INFO  DAGScheduler:54 - running: Set()
+2021-10-01 02:17:12 INFO  DAGScheduler:54 - waiting: Set(ResultStage 21)
+2021-10-01 02:17:12 INFO  DAGScheduler:54 - failed: Set()
+2021-10-01 02:17:12 INFO  DAGScheduler:54 - Submitting ResultStage 21 (ShuffledRDD[68] at countByValue at MulticlassMetrics.scala:42), which has no missing parents
+2021-10-01 02:17:12 INFO  MemoryStore:54 - Block broadcast_32 stored as values in memory (estimated size 3.3 KB, free 92.2 MB)
+2021-10-01 02:17:12 INFO  MemoryStore:54 - Block broadcast_32_piece0 stored as bytes in memory (estimated size 2016.0 B, free 92.2 MB)
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 396
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 397
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 393
+2021-10-01 02:17:12 INFO  BlockManagerInfo:54 - Added broadcast_32_piece0 in memory on namenode:40347 (size: 2016.0 B, free: 93.1 MB)
+2021-10-01 02:17:12 INFO  SparkContext:54 - Created broadcast 32 from broadcast at DAGScheduler.scala:1161
+2021-10-01 02:17:12 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 21 (ShuffledRDD[68] at countByValue at MulticlassMetrics.scala:42) (first 15 tasks are for partitions Vector(0))
+2021-10-01 02:17:12 INFO  YarnScheduler:54 - Adding task set 21.0 with 1 tasks
+2021-10-01 02:17:12 INFO  BlockManagerInfo:54 - Removed broadcast_25_piece0 on datanode2:35737 in memory (size: 31.3 KB, free: 93.2 MB)
+2021-10-01 02:17:12 INFO  TaskSetManager:54 - Starting task 0.0 in stage 21.0 (TID 21, datanode2, executor 1, partition 0, NODE_LOCAL, 7673 bytes)
+2021-10-01 02:17:12 INFO  BlockManagerInfo:54 - Removed broadcast_25_piece0 on namenode:40347 in memory (size: 31.3 KB, free: 93.1 MB)
+2021-10-01 02:17:12 INFO  BlockManagerInfo:54 - Added broadcast_32_piece0 in memory on datanode2:35737 (size: 2016.0 B, free: 93.2 MB)
+2021-10-01 02:17:12 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 8 to 10.250.64.26:35886
+2021-10-01 02:17:12 INFO  BlockManagerInfo:54 - Removed broadcast_22_piece0 on namenode:40347 in memory (size: 27.8 KB, free: 93.2 MB)
+2021-10-01 02:17:12 INFO  BlockManagerInfo:54 - Removed broadcast_22_piece0 on datanode2:35737 in memory (size: 27.8 KB, free: 93.2 MB)
+2021-10-01 02:17:12 INFO  TaskSetManager:54 - Finished task 0.0 in stage 21.0 (TID 21) in 29 ms on datanode2 (executor 1) (1/1)
+2021-10-01 02:17:12 INFO  YarnScheduler:54 - Removed TaskSet 21.0, whose tasks have all completed, from pool 
+2021-10-01 02:17:12 INFO  DAGScheduler:54 - ResultStage 21 (countByValue at MulticlassMetrics.scala:42) finished in 0.036 s
+2021-10-01 02:17:12 INFO  DAGScheduler:54 - Job 12 finished: countByValue at MulticlassMetrics.scala:42, took 0.136346 s
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 449
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 407
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 446
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 484
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 411
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 238
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 392
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 511
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 398
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 512
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 483
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 475
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 240
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 434
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 499
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 448
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 507
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 473
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 429
+('Test Accuracy = ', 0.7888198757763976)
+2021-10-01 02:17:12 INFO  BlockManagerInfo:54 - Removed broadcast_21_piece0 on namenode:40347 in memory (size: 704.0 B, free: 93.2 MB)
+2021-10-01 02:17:12 INFO  BlockManagerInfo:54 - Removed broadcast_21_piece0 on datanode2:35737 in memory (size: 704.0 B, free: 93.2 MB)
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 424
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 490
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 515
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 405
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 435
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 241
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 497
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 513
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 500
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 443
+2021-10-01 02:17:12 INFO  BlockManager:54 - Removing RDD 48
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned RDD 48
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 465
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 468
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 451
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 395
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 508
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 425
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 481
+2021-10-01 02:17:12 INFO  BlockManagerInfo:54 - Removed broadcast_29_piece0 on namenode:40347 in memory (size: 39.3 KB, free: 93.2 MB)
+2021-10-01 02:17:12 INFO  BlockManagerInfo:54 - Removed broadcast_29_piece0 on datanode2:35737 in memory (size: 39.3 KB, free: 93.2 MB)
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 427
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 492
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 394
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 469
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 476
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 498
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 480
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 417
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 408
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 441
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 415
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 412
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 486
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 459
+2021-10-01 02:17:12 INFO  ContextCleaner:54 - Cleaned accumulator 485
+2021-10-01 02:17:12 INFO  SparkContext:54 - Invoking stop() from shutdown hook
+2021-10-01 02:17:12 INFO  AbstractConnector:318 - Stopped Spark@44ebc263{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2021-10-01 02:17:12 INFO  SparkUI:54 - Stopped Spark web UI at http://namenode:4040
+2021-10-01 02:17:12 INFO  YarnClientSchedulerBackend:54 - Interrupting monitor thread
+2021-10-01 02:17:12 INFO  YarnClientSchedulerBackend:54 - Shutting down all executors
+2021-10-01 02:17:12 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Asking each executor to shut down
+2021-10-01 02:17:12 INFO  SchedulerExtensionServices:54 - Stopping SchedulerExtensionServices
+(serviceOption=None,
+ services=List(),
+ started=false)
+2021-10-01 02:17:12 INFO  YarnClientSchedulerBackend:54 - Stopped
+2021-10-01 02:17:12 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2021-10-01 02:17:12 INFO  MemoryStore:54 - MemoryStore cleared
+2021-10-01 02:17:12 INFO  BlockManager:54 - BlockManager stopped
+2021-10-01 02:17:12 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2021-10-01 02:17:12 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2021-10-01 02:17:12 INFO  SparkContext:54 - Successfully stopped SparkContext
+2021-10-01 02:17:12 INFO  ShutdownHookManager:54 - Shutdown hook called
+2021-10-01 02:17:12 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-b4f55550-baa6-4375-885c-879aafcb7208
+2021-10-01 02:17:12 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-723c3b28-2768-4996-a092-a8e60afdc76a/pyspark-6a72201d-2a10-421b-a396-be34bb07e0af
+2021-10-01 02:17:12 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-723c3b28-2768-4996-a092-a8e60afdc76a
